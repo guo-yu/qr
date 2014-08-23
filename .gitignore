@@ -2,3 +2,5 @@
 
 .idea
 .project
+*.sublime-*
+node_modules

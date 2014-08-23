@@ -1,0 +1,14 @@
+{
+  "name": "qr",
+  "author": "turing <o.u.turing@gmail.com>",
+  "license": "MIT",
+  "scripts": {
+    "build": "node_modules/.bin/uglifyjs lib/qrcode.min.js src/qr.js -o dist/qr.min.js --source-map dist/qr.min.js.map --source-map-url qr.min.js.map --source-map-root ../src/qr.js",
+    "watch": "node_modules/.bin/rewatch src/*.js src/**/*.js -c 'npm run build'",
+    "dev": "npm run watch"
+  },
+  "devDependencies": {
+    "uglify-js": "^2.4.15",
+    "rewatch": "~0.2.2"
+  }
+}
